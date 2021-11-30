@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="faq_tech_support.css"/>
+    <script src="faq_main.js"></script>
+    <title>HALO° FAQ</title>
+    <link rel="shortcut icon" href="faq_images/favicon3.png">
+  </head>
+  <body>
+    <form class="search_wrap" autocomplete="off" action="">
+      <div class="autocomplete" style="width:300px;">
+        <input id="myInput" type="search" name="myCountry" placeholder="Search Terms...">
+        <button type="button" onclick="findString(myInput.value)" id="btn" class="btn">
+          <span class="fas fa-search"></span>
+        </button> 
+      </div>
+    </form>
+    <nav class="breadcrumb">
+      <a class="Img-wrap" href="faq_HALO.html"><img class="HALO" src="faq_images/favicon3.png" alt="HALO Icon"></a>
+      <ul class="Top-info">
+        <p class="TOC">Table of Contents</p>
+        <li><a class="TOC_Space" href="faq_NEMO.html">NEMO</a></li>
+      </ul>
+      <div class="dropdown">
+       <a href="registration.html"> <button class="dropbtn"> Registration </button></a>
+        <div class="dropdown-content">
+          <a href="#Registration_Page">Register a User</a>
+          <a href="#Register_Fail">First Step of Registration</a>
+        </div>
+      </div>
+      <div class="dropdown">
+       <a href="user_issues.html"> <button class="dropbtn">User Issues</button></a>
+        <div class="dropdown-content">
+          <a href="#Exam_Resume">Resume an Exam For User</a>
+          <a href="#Exam_Delete">Delete an Exam Attempt</a>
+          <a href="#Exam_Attempts">Find User Exam Attempt</a>
+          <a href="#Password_Reset">Resetting User Password</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Pre_exam_issues.html"> <button class="dropbtn">Pre - Exam Issues</button></a>
+        <div class="dropdown-content">
+          <a href="#Pre_Scan">Pre-environment Scan</a>
+          <a href="#App_issues">App or Browser Related Issues</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Exam_Issues.html"> <button class="dropbtn">During Exam</button></a>
+        <div class="dropdown-content">
+          <a href="#Camera_Issues">Camera Permissions</a>
+          <a href="#Exam_Dropdown">Exam Missing in Dropdown</a>
+          <a href="#Exam_Freeze">Exam Freeze</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="Email_templates.html"> <button class="dropbtn">Email Templates</button></a>
+        <div class="dropdown-content">
+          <a href="#Email_Template">User Invalid ID Email</a>
+          <a href="#Email_Password">Password reset Email</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Video Examples <em>(Dated)</em></button>
+        <div class="dropdown-content">
+          <a target="_blank" href="https://www.dropbox.com/s/ji7f0wsp7v7sdg8/Halo%20-%20Build%20Question%20Banks.mp4?dl=0">Creating HALO Exam</a>
+          <a target="_blank" href="https://northeastmaritime.monday.com/boards/140645215/pulses/899485963/posts/859958364">Adding Exam to HALO</a>
+          <a target="_blank" href="https://www.dropbox.com/s/iwssuljjt8mwfs4/HALO%20Exams%20-Enrolling%20a%20Student%20Into%20an%20Exam%20.mp4?dl=0">Enrolling Users in Exams</a>
+        </div>
+      </div>
+      <div class="Padding">
+      <div class="far fa-question-circle" id="tooltip">
+        <span id="tooltiptext">Clicking on one of the grey Headers above will direct you to its specific page. While on this page you can use the dropdown menu provided when hovering over a grey header, to navigate through specific sections of the page.    </span>
+      </div>
+     </div>
+    </nav>
+    <main class="main">
+      <header class="faq-header">HALO° FAQ Page</header>
+      <div id="Registration_Page" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Registration:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            Registration is a 2-step process:
+          </p>
+          <p id="indent" class="faq-info">
+            Step 1: User Information Application <a href="https://haloexams.com/users/NEMOApplication/ ">Here</a> <br>
+          </p>
+          <p id="indent2" class="faq-info">
+            Step 2: Register for an Account on HALO <a href="https://haloexams.com/registerNEMO/">Here</a> <br>
+            Submissions from Step 1 can be found on “Applicants” in the Admin
+            portal.
+          </p>
+          <img
+            src="faq_images/Registration-faq.png"
+            alt="Applicants admin portal"
+            class="faq-image"
+          />
+          <p class="faq-info">
+            If an entry for a user is found in “Applicants”, they’d only need to
+            fill out Step 2 next.
+          </p>
+          <p class="faq-info">Manually enroll user: <br/>For Step 1:</p>
+          <p id="indent" class="faq-info">
+            Go to:
+            <a href="https://haloexams.com/nmiadmin/users/applicant/add/"
+              >Here</a
+            ><br />You will need information from the user to fill out all the
+            fields including pictures.<br>• Make sure photos adhere to guidelines as
+            we are manually uploading them. <br>• Submit the form when you have all
+            the information.
+          </p>
+          <p>For Step 2:</p>
+          <p class="faq-info">
+            • Make sure that Step 1 is complete by searching for the user's
+            application in the “Applicants” section. • Go to “Users” on the Admin
+            portal and click “Add”
+          </p>
+          <img
+            src="faq_images/Add-user.png"
+            alt="Applicants admin portal"
+            class="faq-image"
+          />
+          <p class="faq-info">
+            • Fill out the information for the new user, set username as the email
+            user in their User Information application (Step 1). <br />• Add a
+            password that will be provided to the user. <br />• Hit Submit to add
+            a user on HALO.<br />• Next, go to “User - Face Verification Images”
+            to add the user’s registration headshot.
+          </p>
+          <img
+            src="faq_images/user-face.png"
+            alt="Applicants admin portal"
+            class="faq-image"
+          />
+          <p class="faq-info">
+            • Select the user we just added by looking for their name and email
+            id.<br />• For the image field, go to the user’s application in
+            “Applicants” and find the <br>  picture labeled “Passport Photo” and
+            download it.
+          </p>
+          <img
+            src="faq_images/passport-id.png"
+            alt="Applicants admin portal"
+            class="faq-image"
+          />
+          <p class="faq-info">
+            • Upload the above picture into the image field in “User - Face
+            Verification Images”.<br>• Hit “Save”<br>
+            • User has been successfully registered. Now you may provide them with
+            the username and password to ‘Login’ to HALO Exams
+            <a href="https://haloexams.com/login/">Here</a>
+          </p>
+        </div>
+      </div>
+      <div id="Register_Fail" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title"> First Step of Registration Issues: </p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            • If the User is unnable to submit the first step of their Registration Application.</p>
+            <p class="faq-info">
+              • This is most likely an issue with the documents they have tried to upload. <br>
+              • Please Access the admin portal on HALO to check the User's applicant model <br>
+              ‏‏‎‏‏‎ ‎‏‏‎ ‎‏‏‎‏‏‎ ‎‏‏‎ Look though the application to see if the photo they have uploaded is either
+              poor quality, <br> ‏‏‎ ‎‏‏‎‏‏‎ ‎‏‏‎‏‏‎ ‎‏‏‎‏‏‎ ‎‏‏‎‏‏‎ ‎‏‏‎‏‏‎ ‎‏‏‎‏‏‎ ‎‏‏‎‏‏‎ ‎‏‏‎or the wrong photo altogether.</p>
+        </div>  
+      </div>
+      <div id="Exam_Freeze" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Exam Freeze Issue:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            • Ask the user to click on "Exam Center" and then click on “Leave"
+            when prompted if they would like to exit the exam. <br>• Once on the
+            Exam Center, instruct the user to find their exam and click “Open”.
+            <br>
+            • Click "Continue Exam" and it should bring them back to the same
+            question they were on when they got stuck.
+          </p>
+          <p class="faq-info">
+            Advice the user to follow these steps if their exam were to freeze
+            again.
+          </p>
+        </div>
+      </div>
+      <div id="Exam_Attempts" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title"> Find User Exam Attempt:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            • To delete an exam attempt and let the user restart an attempt, go to
+            the user’s exam attempt on the “User Stats” page. <br />• Look up the
+            exam attempt by using the Filter/Search function on the page.<br />
+            • Click on “View Details” for the respective exam.
+          </p>
+          <p class="faq-info">
+            • Confirm the attempt number of the exam and other details.
+          </p>
+        </div>
+      </div>
+      <div id="Exam_Delete" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Delete an Exam Attempt to allow Retake:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            This feature can be used to provide another attempt of an exam by
+            deleting an attempt
+          </p>
+          <p class="faq-info">
+            • Navigate to a User’s exam attempt as explained above. <br />• Scroll
+            all the way to the bottom and click “Delete Exam” <br />
+            • The user can now restart the exam and it will start from the
+            beginning.
+          </p>
+        </div>
+      </div>
+      <div id="Exam_Resume" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Resume an Exam For User:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            • Navigate to a User’s exam attempt as explained above <br >• Click the
+            “Resume Exam” green colored button to: <br >
+            ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎Unblock the user <br >‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎Reset the exam so violations are removed
+            <br />
+            ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎Give the user the ability to resume the exam
+          </p>
+          <p class="faq-info">
+            • Please ask the user to go back to the “Exam Center” and start their
+            exam again. <br> •  This action can only be done if the time for the exam has not
+            passed.
+          </p>
+        </div>
+      </div>
+      <div id="Password_Reset" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Resetting User Password:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            If a user is having trouble resetting their password:
+          </p>
+          <p class="faq-info">
+            • Suggest the user to check their spam folder for an email by HALO
+            Exams that says “Password Reset” <br >
+            •  Check the “Sent” emails in
+            <a href="https://haloexams.com/support/">help@halo-exams.com’s</a>
+            mailbox for the user’s password reset email. <br >
+            •  If found, forward it to the user again. It should typically get into
+            their inbox this time.
+          </p>
+        </div>
+      </div>
+      <div id="App_issues" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">App or Browser Related Issues</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            • If there are any issues that you’re not sure how to handle, ask the
+            user what computer(Windows or Mac) AND which browser are they using.
+          </p>
+          <p class="faq-info">
+            • After making sure that the user is NOT on a mobile/Ipad, ask the
+            user to close the app and to open Google Chrome.
+          </p>
+          <p class="faq-info">
+            • On Chrome, going to www.haloexams.com and logging in should direct
+            the user towards their exams..
+          </p>
+          <p class="faq-info">
+            • To confirm, you may ask the user to tell you what it says against
+            “Browser Detected” on the exam details screen:
+          </p>
+          <img
+            src="faq_images/Browser-help.png"
+            alt="Applicants admin portal"
+            class="faq-image"
+          />
+        </div>
+      </div>
+      <div id="Exam_Dropdown" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Exam Missing in Dropdown Menu:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            If the User is unable to view their Exam in the "Request an Exam" Dropdown Menu  <br />
+            Inside of their Exam Center <br>
+            • This is most likely a simple code change to implement the specific Exam into the Dropdown<br/>
+            ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ Please alert MAX as soon as possible so he can resolve this issue
+          </p>
+          <p class="faq-info">
+            Advise the user to please allow the changes to be made and to refresh their webpage afterward. 
+          </p>
+        </div>
+      </div>
+      <div id="Pre_Scan" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Pre - environment Scan:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            If the user has completed their pre-environment scan,<br>
+            and is waiting for the process to complete for more than 15 minutes.<br>
+            • Ask the user what type of internet connection they are on <br>
+            ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ If the user is on a Satellite / Vessel connection Inform them to should try this process again
+          </p>
+          <p class="faq-info">
+            ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ If the user is on a wired connection  <br>
+           Advise the user to please refresh the page, they may need to wait a minute.
+          </p>
+        </div>
+      </div>
+      <div id="Camera_Issues" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Camera Permissions / Video Upload Limbo:</p>
+          <p class="version">Version 1.0</p>
+          <p class="faq-info">
+            If a user encounters the issue where their camera is unable to upload any video to HALO Exam screening,
+          </p>
+          <p class="faq-info">
+            • ‎‏‏‎Ask the user what computer (Windows or Mac) they are using. <br> 
+            • Also, ask the student if they are using the stand alone app or if they are on a browser <br>
+            <br>
+            • If the user Is currently taking the Exam on a vessel with unreliable Bandwidth / Internet Connection, <br>
+            this is most likely the problem.
+          </p>
+        </div>
+      </div>
+      <div id="Email_Template" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Email Templates:</p>
+          <br/>
+          <p class="faq-title">HALO° User Invalid ID Email Template:</p>
+          <p class="faq-info">Hi {StudentName},</p>
+          <p class="faq-info">
+            Our records indicate that you did not upload a valid photo ID during
+            your registration on HALO Exams. It shows that the headshot has been
+            uploaded twice.
+          </p>
+          <p class="faq-info">
+            Please send over a valid photo ID (driver's license, state ID or
+            passport) to this email, and we will update your profile on HALO.
+            Please be aware that we won't be able to proceed with approval of
+            your exams without the photo ID as part of your profile. This is
+            mainly because the exam is taken online, and we need to verify the
+            identity of the individual taking the exam for compliance and
+            issuance of any license(s).
+          </p>
+          <p class="faq-info">Let us know if you have any questions.</p>
+          <p class="faq-info">HALO Education Systems</p>
+        </div>
+      </div>
+      <div id="Email_Password" class="faq-contain">
+        <div class="faq-content">
+          <p class="faq-title">Password Reset Email:</p>
+          <p class="faq-info">
+            • Find the user’s password reset email in the Sent folder and forward
+            the email again to the user. <br>• It is possible that they have it in
+            their Spam folder, but manually re-sending the email ends up in
+            their inbox. ‎‏‏‎ ‎‏‏‎  <em>Example Email Below</em> <br> <br> Hello Tom,
+          </p>
+          <p class="faq-info">
+            I have manually forwarded the password reset email that you
+            requested. The original email may have gone into your spam folder,
+            so if you ever need a password reset in the future I would check
+            there if you cannot find the email.
+          </p>
+          <p class="faq-info">
+            If there is anything else we can help you with, please let us know.
+          </p>
+          <p class="faq-info">
+            Thank you, <br>
+            HALO Education Systems
+          </p>
+        </div>
+      </div>
+    </main>
+ <style>
+ @media only screen and (max-width: 800px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      overflow: hidden;
+   }
+ }
+ @media only screen and (max-width: 1100px) {
+    .faq-image {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      overflow: hidden;
+    }
+ }
+ @media only screen and (max-width: 1100px) {
+    .breadcrumb {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 80%;
+      overflow: hidden;
+    }
+ }
+
+ html {
+  scroll-behavior: smooth;
+ }
+
+ body {
+  /*background-image: linear-gradient(50deg, #5a5b669c, #788a9683);*/
+  background-color: rgb(252, 252, 252);
+  font-family: "Segoe UI", sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  line-height: 1;
+  }
+
+ .main {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 7rem;
+  margin-top: 2rem;
+  /*border: 2px solid #b6c1cc;
+  box-shadow: 3px 4px 13px rgb(1 1 2 / 20%), 3px 4px 13px rgb(1 1 2 / 20%);*/
+  background-color: rgb(250, 250, 250);
+  line-height: 1.3;
+  font-family: "Segoe UI", sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+ }
+
+ .TOC{
+  margin: 0;
+  padding: 2px 0px 8px 0px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.4rem;
+  background-image: linear-gradient(to right,rgba(200,204,209,0) 0,#edf0f5 33%,#d2dbe6 66%,rgba(200,204,209,0) 100%);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  font-family: -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+ .TOC_Title{
+  position: relative;
+  margin: 0;
+  padding: 8px 0px 6px 0px;
+  background-image: linear-gradient(to right,rgba(200,204,209,0) 0,#e3e4e6 33%,#c8ccd1 66%,rgba(200,204,209,0) 100%);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-color: rgba(211, 211, 211, 0.432);
+ }
+
+ .TOC_Space{
+  padding: 8px 0px 0px 0px;
+  justify-content: center;
+  display: flex;
+ }
+
+ ul{
+  margin-block-start: 0;
+  margin-block-end: 0;
+ }
+
+ .Top-info{
+  display: inline-flex;
+  flex-direction: row;
+ }
+
+
+
+ header{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+ }
+
+ .faq-contain{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-around;
+  font-family: "Segoe UI", sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  margin-bottom: 2rem;
+  }
+
+ .faq-content{
+  margin: 1rem;
+  max-height: 100%;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 10px 0px 0px 0px;
+  background-color: transparent;
+ }
+
+ .faq-header{
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 4.1rem;
+  color: #fbbf13;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1rem;
+ }
+
+ img {
+  margin: auto;
+  background-color: rgba(200,204,209,0.03);
+ }
+
+.faq-info{
+  margin: 0.8rem;
+ }
+
+ #indent{
+  margin-left: 1.7rem;
+ }
+
+ #indent2{
+  margin-left: 2.6rem;
+ }
+
+ .faq-title{
+  font-weight: 700;
+  font-size: 1.7rem;
+  text-decoration: underline;
+  font-family: 'Roboto', sans-serif;
+   margin-top: 1rem;
+  margin-bottom: 0;
+ }
+
+ .version{
+  font-size: 11px;
+  color: #6d6b6b;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  margin-left: 0.4rem;
+  font-family: monospace;
+  /* font-family: 'roboto'; */
+ }
+
+ .header{
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+ }
+
+ ::placeholder{
+  color: black;
+  opacity: 0.7;
+  font-size: 1.5rem;
+ }
+
+ .autocomplete {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 2.1rem;
+  font-size: 1.8rem;
+ }
+
+ ::selection{
+  background-color: #f0ed33cc;
+ }
+
+ .search_wrap{
+  top: 2rem;
+  width: 25rem;
+ }
+
+ span{
+  position: relative;
+  padding: 2.8px;
+ }
+
+ form{
+  position: fixed;
+  display: flex;
+  justify-content: left;
+  margin-top: 2rem;
+  border: 2px solid black;
+  height: 2.15rem;
+  min-width: fit-content;
+  right: 2%;
+  background-position: right;
+  background-color: rgb(68, 65, 65);
+  box-shadow: 3px 4px 3px rgb(1 1 2 / 20%), 3px 4px 3px rgb(1 1 2 / 20%);
+ }
+
+ .btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  /*background-color: #666460;*/
+  background-image: linear-gradient(10deg, #8b78439c, #42556183);
+  color: white;
+  border: none;
+  font-size: 1.6rem;
+  width: 8rem;
+  transform: translate(0.90);
+  z-index: 1;
+ }
+
+ .btn:active {
+  transform: scale(0.90);
+ }
+
+ .btn:hover{
+  background-color: #fff;
+  color: black;
+ }
+
+ input:hover{
+  background-color: #fff;
+  color: black;
+  opacity: 0.8;
+ }
+
+ input{
+  background-color: white;
+  color: black;
+  font-size: 1.941rem;
+  border: none;
+  height: 2.1rem;
+  outline: none;
+  border-right: 5px solid black;
+  font-family: 'roboto';
+  padding-left: 0.3rem;
+  padding-bottom: 0.3rem;
+ }
+
+ input[type=text] {
+  background-color: #162c53;
+  width: 100%;
+ }
+
+ input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+ }
+
+ #myInput[type="search"]::-webkit-search-cancel-button{
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 50em;
+  background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+   background-size: contain;
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;  
+ }
+
+ #myInput[type="search"]:focus::-webkit-search-cancel-button {
+  opacity: .6;
+  pointer-events: all;
+  margin-top: 0.3rem;
+ }
+
+ .autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+ }
+
+ .autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  font-size: 1rem;
+  width: 110.2%;
+ }
+
+ .autocomplete-items div:hover {
+  background-color: #e9e9e9;
+ }
+
+ .autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+ }
+
+ .HALO{
+  width: 75%;
+ }
+
+ .HALO-two{
+  width: 75%;
+  padding: 16%;
+ }
+ /* Dropdown Menu */
+
+ .breadcrumb {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 2px solid whitesmoke;
+  border-left: none;
+  width: 10%;
+  margin-top: 1rem;
+  background-image: linear-gradient(110deg, #3350ac9c, #4c95d1a4);
+  box-shadow: 3px 4px 3px rgb(1 1 2 / 20%), 3px 4px 3px rgb(1 1 2 / 20%);
+  font-family: 'Roboto', sans-serif;
+  min-width: 120px;
+ }
+
+ .breadcrumb a{
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #fbbf13;
+ }
+
+ .breadcrumb a:hover{
+  color: #fae741;
+ }
+
+ .breadcrumb ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0px 0px 4px 0px;
+ }
+
+ .breadcrumb li{
+  list-style-type: none;
+  padding: 0px 0px 4px 0px;
+ } 
+
+ /* Dropdown style */
+ .dropbtn {
+  position: relative;
+  margin: 0;
+  background-color: rgba(211, 211, 211, 0.199);
+  background-image: linear-gradient(to right,rgba(200,204,209,0) 0,#c8ccd1 33%,#c8ccd1 66%,rgba(200,204,209,0) 100%);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  color: black;
+  padding: 9px 0px 9px 0px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: 'roboto', sans-serif;
+ }
+  
+ /* The container <div> - needed to position the dropdown content */
+ .dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+  width: 100%;
+ }
+  
+ /* Dropdown Content (Hidden by Default) */
+ .dropdown-content {
+  display: none;
+  position: absolute;
+  /*background-color: transparent;*/
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 11.9rem;
+  top: 0;
+  border: 1px solid #8d8787;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+  
+ /* Links inside the dropdown */
+ .dropdown-content a {
+  font-size: 1rem;
+  color: black;
+  padding: 10px 6px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+  
+ /* Change color of dropdown links on hover */
+ .dropdown-content a:hover {
+  /* background-color: rgba(90, 120, 216, 0.692);  */
+  background-image: linear-gradient(110deg, #3350ac9c, #4c95d1a4);
+  border: 1.5px solid #4b4949; 
+  color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+  transform: translate(1.04);
+ }
+
+ .dropdown-content a:hover {
+  transform: scale(1.04);
+ }
+  
+ /* Show the dropdown menu on hover */
+ .dropdown:hover .dropdown-content {
+  display: block;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+ }
+  
+ /* Change the background color of the dropdown button when the dropdown content is shown */
+ .dropdown:hover .dropbtn {
+  background-color: rgba(79, 112, 221, 0.692);
+  color: white;
+ }
+
+ #tooltip {
+  position: relative;
+  display: inline-block;
+  /*padding: 5px 4px 3px 170px;*/
+  margin-left: 87%;
+  padding: 0px 5px 5px 0px;
+ }
+
+ #tooltip #tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: rgb(34, 33, 33);
+  color: #fff;
+  text-align: center;
+  padding: 8px 8px;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute; 
+  z-index: 1;
+  font-family: monospace;
+ }
+  
+ #tooltip:hover #tooltiptext {
+  visibility: visible;
+ }
+
+ .Img-wrap{
+  display: flex;
+  width: 100%;
+ }
+
+ .Bullet ul{
+   list-style-type: square;
+   color: black;
+   list-style-position: outside;
+ }
+ </style>
+    <script>
+      var myInput = document.getElementById("myInput")
+      autocomplete(document.getElementById("myInput"), HALO_terms);
+      function findString(text) { window.find(text);}
+      myInput.addEventListener("keyup", ({key}) => {
+      if (key === "Enter") {findString(myInput.value)}})
+    </script>
+  </body>
+</html>
